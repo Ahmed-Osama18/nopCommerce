@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="94.252">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="10.777">
+        <system-out><![CDATA[Given Step 1 user go to register page.......................................passed
+And Step 2 user select gender type..........................................passed
+And Step 3 user enter first name "automation" and last name "tester"........passed
+And Step 4 user enter date of birth.........................................passed
+And Step 5 user enter email "test@example.com" field........................passed
+And Step 6 user fills Password fields "P@ssw0rd" "P@ssw0rd".................passed
+When Step 7 user clicks on register button..................................passed
+Then Step 8 success message is displayed....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="6.315">
+        <system-out><![CDATA[Given Step 1 user go to login page..........................................passed
+And Step 2 user login with "valid" "test@example.com" and "P@ssw0rd"........passed
+When Step 3 user press on login button......................................passed
+Then Step 4 user login to the system successfully...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F03_forgetPassword | users could use forget password functionality to recover their accounts" name="users could use forget password functionality to recover their accounts" time="6.995">
+        <system-out><![CDATA[Given Step 1 user go to login page..........................................passed
+And Step 2 user click on forget password....................................passed
+When Step 3 user enter email address........................................passed
+And Step 4 user click on recover button.....................................passed
+Then Step 5 message is displayed "Email with instructions has been sent to you".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | user could be able to search using product name" name="user could be able to search using product name" time="6.69">
+        <system-out><![CDATA[When user search using product nike name....................................passed
+Then user should be able to find items with product name....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_currencies | customer can choose currency type that he would like to deal with" name="customer can deal with Euro" time="4.963">
+        <system-out><![CDATA[When Step 1 user select Euro currency from the dropdown list on the top left of home page.passed
+Then Step 2 Euro Symbol € is shown on the 4 products displayed in Home page.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F06_hover| user could be able to hover on categories to select subcategories" name="user could be able to hover on categories to select subcategories" time="5.5">
+        <system-out><![CDATA[When select one of the three main categories to hover randomly..............passed
+And select one of the three subcategories to hover randomly.................passed
+Then the page title should be the same as the selected one..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F07_filter| user could be able to filter by color" name="user could be able to filter by color" time="5.838">
+        <system-out><![CDATA[When user hover on apparel..................................................passed
+And user click on shoes.....................................................passed
+And user choose red color...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_filter| user could be able to select by tag" name="user could be able to select by tag" time="6.242">
+        <system-out><![CDATA[When user click on any category.............................................passed
+And user click on any tag item..............................................passed
+Then tag windows should be open.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F09_AddToCart | Success message appears when clicking on add to cart button" name="success message appears in green background when user add item to cart" time="7.459">
+        <system-out><![CDATA[When user click on add to cart..............................................passed
+Then added success message is displayed.....................................passed
+And background color is green...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F10_Wishlist | Success message appears when clicking on wishlist button" name="success message appears in green background when user add item to wishlist" time="4.509">
+        <system-out><![CDATA[When user click on wishlist icon............................................passed
+Then success message is displayed...........................................passed
+And background color is green...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F10_Wishlist | Success message appears when clicking on wishlist button" name="items should be added to wishlist page and Qty should be bigger than 0" time="9.357">
+        <system-out><![CDATA[When user click on wishlist icon............................................passed
+And user wait until this success message with green color to disappear......passed
+When click on Wishlist Tab..................................................passed
+Then Verify qty value bigger than 0.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F11_ProductComparison | Success message appears when clicking on compare button" name="success message appears in green background when user click on item compare" time="6.243">
+        <system-out><![CDATA[When user click on compare button...........................................passed
+Then comparison success message is displayed................................passed
+And background color is green...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F12_SuccessfulOrder | end to end order scenario" name="end to end order scenario" time="13.007">
+        <failure message="element not interactable&#10;  (Session info: chrome=108.0.5359.125)&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4f73b34ac8f05364af4e97fa710ac1d5, clickElement {id=7a156c58-e986-4322-a8ae-8854bbdc5b75}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HasanA3\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52672/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (4f73b34ac8f05364af4e97fa710ac1d5)] -&gt; xpath: //div[@id=&quot;checkout-step-shipping-method&quot;]//button[@class=&quot;button-1 shipping-method-next-step-button&quot;]]&#10;Session ID: 4f73b34ac8f05364af4e97fa710ac1d5" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given Step 1 user go to login page..........................................passed
+And Step 2 user login with "valid" "test@example.com" and "P@ssw0rd"........passed
+And Step 3 user press on login button.......................................passed
+Then Step 4 user login to the system successfully...........................passed
+When user click on add to cart..............................................passed
+And user click on shopping cart.............................................passed
+And user click on accept terms..............................................passed
+And user click on checkout button...........................................passed
+And fill billing address data...............................................passed
+And choose shipping method..................................................failed
+And choose payment method...................................................skipped
+And choose payment info.....................................................skipped
+And Confirm Order...........................................................skipped
+Then Order has been successfully processed..................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f73b34ac8f05364af4e97fa710ac1d5, clickElement {id=7a156c58-e986-4322-a8ae-8854bbdc5b75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HasanA3\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52672}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52672/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4f73b34ac8f05364af4e97fa710ac1d5)] -> xpath: //div[@id="checkout-step-shipping-method"]//button[@class="button-1 shipping-method-next-step-button"]]
+Session ID: 4f73b34ac8f05364af4e97fa710ac1d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.examples.pages.P05_checkoutPage.clickOnContinueShippingMethod(P05_checkoutPage.java:48)
+	at org.examples.stepDefs.D12_successfulOrderStepDef.shippingMethod(D12_successfulOrderStepDef.java:54)
+	at ✽.choose shipping method(file:///C:/Work/egfwd/nopCommerce/src/main/resources/features/F12_SuccessfulOrder.feature:13)
+]]></failure>
+    </testcase>
+</testsuite>
